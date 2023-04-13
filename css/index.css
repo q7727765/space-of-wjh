@@ -1,3 +1,8 @@
+@charset "utf-8";
+
 h1{
     color: rgb(61, 69, 180);
+}
+
+@media (max-width : 1003px ){
 }
