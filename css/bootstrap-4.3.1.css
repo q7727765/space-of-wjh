@@ -5261,7 +5261,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .progress {
-/*  display: -ms-flexbox;*/
+  display: -ms-flexbox;
   display: flex;
   height: 1.25rem;
   overflow: hidden;
@@ -5271,7 +5271,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .progress-bar {
-/*  display: -ms-flexbox;*/
+  display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
