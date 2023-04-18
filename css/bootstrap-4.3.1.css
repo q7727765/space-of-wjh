@@ -5263,9 +5263,9 @@ a.badge-dark:focus, a.badge-dark.focus {
 .progress {
   display: -ms-flexbox;
   display: flex;
-  height: 1rem;
+  height: 1.25rem;
   overflow: hidden;
-  font-size: 0.75rem;
+  font-size: 1.0rem;
   background-color: #e9ecef;
   border-radius: 0.25rem;
 }
@@ -5277,10 +5277,10 @@ a.badge-dark:focus, a.badge-dark.focus {
   flex-direction: column;
   -ms-flex-pack: center;
   justify-content: center;
-  color: #fff;
-  text-align: center;
+  color: hsla(0,0%,100%,1.00);
+  text-align: left;
   white-space: nowrap;
-  background-color: #007bff;
+  background-color: #007bf;
   transition: width 0.6s ease;
 }
 
@@ -6528,7 +6528,7 @@ button.bg-secondary:focus {
 }
 
 .bg-success {
-  background-color: #28a745 !important;
+  background-color: hsla(200,100%,60%,1.00);
 }
 
 a.bg-success:hover, a.bg-success:focus,
@@ -8016,7 +8016,7 @@ button.bg-dark:focus {
 
 .mt-4,
 .my-4 {
-  margin-top: 1.5rem !important;
+  margin-top: 0.5rem !important;
 }
 
 .mr-4,
