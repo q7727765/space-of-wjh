@@ -11,6 +11,23 @@
 </head>
 
 <body>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark"> 
+  <!-- Brand --> 
+  <a class="navbar-brand" href="#">个人项目介绍</a> 
+  
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>
+  
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item"> <a class="nav-link" href="#">基本信息</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="#">职业技能</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="#">代表性项目</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="#">个人DIY项目</a> </li>
+    </ul>
+  </div>
+</nav>
 <div class="container">
   <hr>
   <div class="row">
@@ -76,9 +93,9 @@
           <h5><span class="badge badge-secondary">光电信息科学与工程</span></h5>
         </div>
       </div>
-        <ul>
+      <ul>
         <li>担任2013届电子协会会长</li>
-        </ul>
+      </ul>
       <hr>
     </div>
     <div class="col-md-6 col-sm-12">
@@ -102,12 +119,12 @@
           <h5><span class="badge badge-secondary">自动化系统主管</span></h5>
         </div>
       </div>
-        <h6>
+      <h6>
         <ul>
-        <li>负责 四轴与六轴工业机械臂 及 PMSM 的 控制算法仿真（Simulink）、嵌入式实现、调试</li>
-        <li>负责 电机自动化测试平台 的 测试流程设计、嵌入式开发、次品电机的问题排查</li>
+          <li>负责 四轴与六轴工业机械臂 及 PMSM 的 控制算法仿真（Simulink）、嵌入式实现、调试</li>
+          <li>负责 电机自动化测试平台 的 测试流程设计、嵌入式开发、次品电机的问题排查</li>
         </ul>
-            </h6>
+      </h6>
       <!--
       <div class="row">
         <div class="col-6">
@@ -301,10 +318,9 @@
       </div>
       <div class="row">
         <div class="col-6">
-         <h5><strong>背景：</strong></h5>
+          <h5><strong>背景：</strong></h5>
           <h6>&emsp;&emsp;公司自研直驱机械臂使用的是直驱电机，精度高、寿命长、噪声低。但由于没有减速器，关节阻尼小、惯量比小、受干扰极易发生谐振，加上电机本身扭矩波动大，所以控制难度比带减速器机械臂要大很多（本人也控过带减速器的四轴和六轴机械臂）。 </h6>
-            
-         <h5><strong>目标：</strong></h5>
+          <h5><strong>目标：</strong></h5>
           <h6>&emsp;&emsp;开发新的机械臂控制算法，并解决机械臂低速抖动、谐振等问题，提高机械臂的动态响应，及降低位置跟随收敛时间</h6>
         </div>
         <div class="col-6">
@@ -344,9 +360,9 @@
       </div>
       <div class="row">
         <div class="col-6">
-         <h5><strong>背景：</strong></h5>
+          <h5><strong>背景：</strong></h5>
           <h6>&emsp;&emsp;公司生产了首台直驱六轴机械臂后，有了量产的计划，因此找来资本希望能够入股。但是彼时机械臂连驱动器和软件代码都尚未开发，无法为投资人进行机械臂的功能演示。 </h6>
-         <h5><strong>目标：</strong></h5>
+          <h5><strong>目标：</strong></h5>
           <h6>&emsp;&emsp;两周内完成直驱六轴机械臂的驱动电路搭建、底层驱动编写、系统软件编写、控制算法的实现、轨迹算法的实现，并且向投资人展示机械臂的运动。 </h6>
         </div>
         <div class="col-6">
@@ -394,9 +410,9 @@
       </div>
       <div class="row">
         <div class="col-6">
-         <h5><strong>背景：</strong></h5>
+          <h5><strong>背景：</strong></h5>
           <h6>&emsp;&emsp;公司首批自研高扭矩电机性能验证通过，准备量产，亟需能够用于测试大量量产电机性能和可靠性的测试平台。 </h6>
-         <h5><strong>目标：</strong></h5>
+          <h5><strong>目标：</strong></h5>
           <h6>&emsp;&emsp;设计并开发用于测试公司自研高扭矩电机功能可靠性、性能、稳定性的一键自动化测试平台。要求能够满足电机的编码器校准、编码器偏心补偿、电零位自动标定、力-电流曲线标定、刹车可靠性测试、老化测试等多项要求，并且要支持一键测试。 </h6>
         </div>
         <div class="col-6">
@@ -444,9 +460,9 @@
       </div>
       <div class="row">
         <div class="col-6">
-         <h5><strong>背景：</strong></h5>
+          <h5><strong>背景：</strong></h5>
           <h6>&emsp;&emsp;在疫情的大背景下，对核酸检测的需求越来越大。现今核酸检测从采样到检测等流程比较繁琐，而且需要消耗大量人力。 </h6>
-         <h5><strong>目标：</strong></h5>
+          <h5><strong>目标：</strong></h5>
           <h6>&emsp;&emsp;开发能够取代医护人员的一站式自动化核酸检测工作站。利用机械臂完成咽拭子采样，并在工作站上完成检测、出结果。实现无人干预的高效核酸检测流程。 </h6>
         </div>
         <div class="col-6">
