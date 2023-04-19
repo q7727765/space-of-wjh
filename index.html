@@ -4,16 +4,38 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>个人项目介绍-wjh</title>
+<title id="0">个人项目介绍-wjh</title>
 <!-- Bootstrap -->
 <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
 <link rel="title icon" href="images/1.png" type="image/x-icon" />
+<style>
+.gotop {
+    position: fixed;
+    bottom: 10%;
+    z-index: 100;
+    width: 2rem;
+    background: hsla(220,80%,70%,1.00);
+    color: #fff;
+    padding: .5rem;
+    border-radius: .8rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+.gotop:hover, .gotop:active {
+    background: rgba(167, 5, 65, 0.56) ！important;
+    color: #fff;
+    text-decoration: none
+}
+</style>
 </head>
 
 <body>
+<div class="container">
+  <div class="float-right"><a class="gotop d-none d-sm-block" href="javascript:scroll(0,0)">返回顶部</a> </div>
+</div>
 <nav class="navbar navbar-expand-md bg-dark navbar-dark"> 
   <!-- Brand --> 
-  <a class="navbar-brand" href="#">个人项目介绍</a> 
+  <a class="navbar-brand" href="#0">个人项目介绍</a> 
   
   <!-- Toggler/collapsibe Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>
@@ -21,19 +43,14 @@
   <!-- Navbar links -->
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
-      <li class="nav-item"> <a class="nav-link" href="#">基本信息</a> </li>
-      <li class="nav-item"> <a class="nav-link" href="#">职业技能</a> </li>
-      <li class="nav-item"> <a class="nav-link" href="#">代表性项目</a> </li>
-      <li class="nav-item dropdown"> 
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        Dropdown link
-      </a>        
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Link 1</a>
-        <a class="dropdown-item" href="#">Link 2</a>
-        <a class="dropdown-item" href="#">Link 3</a>
-      </div>
-        </li>
+      <li class="nav-item"> <a class="nav-link" href="#1">基本信息</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="#2">职业技能</a> </li>
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#3" data-toggle="dropdown"> 代表性项目 </a>
+        <div class="dropdown-menu"> <a class="dropdown-item" href="#3-1">一、四轴机械臂插件机控制算法开发</a> <a class="dropdown-item" href="#3-2">二、直驱机械臂控制（四轴与六轴）</a> <a class="dropdown-item" href="#3-3">三、电机测试平台</a> <a class="dropdown-item" href="#3-4">四、基于六轴机械臂的核酸检测工作站</a> </div>
+      </li>
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#4" data-toggle="dropdown"> 个人DIY项目 </a>
+        <div class="dropdown-menu"> <a class="dropdown-item" href="#4-1">一、多种开源无人机</a> <a class="dropdown-item" href="#4-2">二、小四轴（stm32）</a> <a class="dropdown-item" href="#4-3">三、voron2.4 开源3D打印机</a> <a class="dropdown-item" href="#4-4">四、其他作品</a> </div>
+      </li>
     </ul>
   </div>
 </nav>
@@ -48,7 +65,7 @@
     </div>
   </div>
   <hr>
-  <div class="row">
+  <div class="row" id="1">
     <div class="col-md-8 col-sm-12">
       <div class="media"> <img src="images/一寸照片.png" alt="Generic placeholder image" width="100" class="mr-3">
         <div class="media-body">
@@ -165,7 +182,7 @@
     </div>
   </div>
   <!--  <hr>-->
-  <h2>职业技能</h2>
+  <h2 id="2">职业技能</h2>
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-sm-12">
@@ -313,13 +330,13 @@
     </div>
   </div>
   <hr>
-  <h2>代表性项目</h2>
+  <h2 id="3">代表性项目</h2>
   <hr>
   <div class="container">
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <h4><strong>一、四轴机械臂插件机控制算法开发</strong></h4>
+          <h4 id="3-1"><strong>一、四轴机械臂插件机控制算法开发</strong></h4>
         </div>
         <div class="col-5">
           <h4 class="text-right">2021.6-2022.8</h4>
@@ -361,7 +378,7 @@
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <h4><strong>二、直驱机械臂控制（四轴与六轴）</strong></h4>
+          <h4 id="3-2"><strong>二、直驱机械臂控制（四轴与六轴）</strong></h4>
         </div>
         <div class="col-5">
           <h4 class="text-right">2019.1-2019.5</h4>
@@ -411,7 +428,7 @@
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <h4><strong>三、电机测试平台</strong></h4>
+          <h4 id="3-3"><strong>三、电机测试平台</strong></h4>
         </div>
         <div class="col-5">
           <h4 class="text-right">2019.8-2021.5</h4>
@@ -461,7 +478,7 @@
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <h4><strong>四、基于六轴机械臂的核酸检测工作站</strong></h4>
+          <h4 id="3-4"><strong>四、基于六轴机械臂的核酸检测工作站</strong></h4>
         </div>
         <div class="col-5">
           <h4 class="text-right">2022.5-2022.8</h4>
@@ -499,13 +516,13 @@
     </div>
   </div>
   <hr>
-  <h2>个人DIY项目</h2>
+  <h2 id="4">个人DIY项目</h2>
   <hr>
   <div class="container">
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <h4><strong>一、多种开源无人机</strong></h4>
+          <h4 id="4-1"><strong>一、多种开源无人机</strong></h4>
         </div>
         <div class="col-5">
           <h4 class="text-right">2017.1.8</h4>
@@ -571,7 +588,7 @@
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <h4><strong>二、小四轴（stm32）</strong></h4>
+          <h4 id="4-2"><strong>二、小四轴（stm32）</strong></h4>
         </div>
         <div class="col-5">
           <h4 class="text-right">2016.12.1</h4>
@@ -631,7 +648,7 @@
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <h4><strong>三、voron2.4 开源3D打印机 </strong></h4>
+          <h4 id="4-3"><strong>三、voron2.4 开源3D打印机 </strong></h4>
         </div>
         <div class="col-5">
           <h4 class="text-right">2021.11.8</h4>
@@ -677,7 +694,7 @@
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <h4><strong>四、其他作品</strong></h4>
+          <h4 id="4-4"><strong>四、其他作品</strong></h4>
         </div>
         <div class="col-5"> 
           <!--          <h4 class="text-right">2021.11.8</h4>--> 
