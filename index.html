@@ -11,22 +11,31 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-md bg-dark navbar-dark"> 
-  <!-- Brand --> 
-  <a class="navbar-brand" href="#">个人项目介绍</a> 
-  
-  <!-- Toggler/collapsibe Button -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>
-  
-  <!-- Navbar links -->
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item"> <a class="nav-link" href="#">基本信息</a> </li>
-      <li class="nav-item"> <a class="nav-link" href="#">职业技能</a> </li>
-      <li class="nav-item"> <a class="nav-link" href="#">代表性项目</a> </li>
-      <li class="nav-item"> <a class="nav-link" href="#">个人DIY项目</a> </li>
-    </ul>
-  </div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">个人项目主页</a>
+ 
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 2</a>
+    </li>
+ 
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Dropdown link
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+      </div>
+    </li>
+  </ul>
 </nav>
 <div class="container">
   <hr>
